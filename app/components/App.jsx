@@ -5,7 +5,8 @@ export default class App extends React.Component {
     return (
       <div style={{textAlign: 'center'}}>
         <h1>Hello React</h1>
+        <p>Learning React</p>
       </div>
-      )
+    )
   }
 }

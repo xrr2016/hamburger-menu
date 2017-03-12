@@ -1,25 +1,22 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-// import App from './components/App.jsx'
+import App from './components/App.jsx'
 
-function formatName (user) {
-  return user.firstName + '' + user.lastName
-}
-function greeting (user) {
-  if (user) {
-    return (<h1>Hello, {formatName(user)}!</h1>)
-  } else {
-    return (<h1>Hello, Stranger.</h1>)
-  }
-}
-const user = {
-  firstName: 'Bruce',
-  lastName: 'Lee'
+function tick () {
+  const element = (
+    <div style={{textAlign: 'center'}}>
+      <h3>It is {new Date().toLocaleTimeString()}</h3>
+    </div>
+  )
+  ReactDom.render(
+    element,
+    document.getElementById('tick')
+  )
 }
 
-const Ele = (<section>{greeting(user)}</section>)
+window.setInterval(tick, 1000)
 
 ReactDom.render(
-  Ele,
+  <App />,
   document.getElementById('root')
 )

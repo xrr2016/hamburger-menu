@@ -21,12 +21,12 @@ function Welcome (props) {
   return (<h4>Welcome,{props.name}</h4>)
 }
 // const welcome = <Welcome name='variable' />
-
-class Hello extends React.Component {
-  render () {
-    return (<h4>Hello, {this.props.name}</h4>)
-  }
-}
+//
+// class Hello extends React.Component {
+//   render () {
+//     return (<h4>Hello, {this.props.name}</h4>)
+//   }
+// }
 class Comment extends React.Component {
   render () {
     return (
@@ -42,7 +42,7 @@ export default class App extends React.Component {
   render () {
     return (
       <div style={{textAlign: 'center'}}>
-        <Hello name='React' />
+        {/* <Hello name='React' /> */}
         <Welcome name='Jack' />
         <Comment text='评论内容' date='2017.03.13' />
       </div>

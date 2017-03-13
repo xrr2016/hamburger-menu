@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import App from './components/App.jsx'
-import Clock from './components/clock.jsx'
+// import Clock from './components/clock.jsx'
 
 // function tick () {
 //   const element = (
@@ -20,7 +20,7 @@ import Clock from './components/clock.jsx'
 ReactDom.render(
   <div>
     <App />
-    <Clock />
+    {/* <Clock id='001' /> */}
   </div>,
   document.getElementById('root')
 )

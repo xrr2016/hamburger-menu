@@ -1,4 +1,5 @@
 import React from 'react'
+import Clock from './clock.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -17,34 +18,34 @@ import React from 'react'
 // // }
 // const testEle = React.createElement('p', {className: 'test'}, 'This is a test element')
 
-function Welcome (props) {
-  return (<h4>Welcome,{props.name}</h4>)
-}
+// function Welcome (props) {
+//   return (<h4>Welcome,{props.name}</h4>)
+// }
 // const welcome = <Welcome name='variable' />
 //
 // class Hello extends React.Component {
 //   render () {
 //     return (<h4>Hello, {this.props.name}</h4>)
 //   }
+// // }
+// class Comment extends React.Component {
+//   render () {
+//     return (
+//       <div className='comment'>
+//         <div className='comment-text'>{this.props.text}</div>
+//         <div className='comment-date'>{this.props.date}</div>
+//       </div>
+//     )
+//   }
 // }
-class Comment extends React.Component {
-  render () {
-    return (
-      <div className='comment'>
-        <div className='comment-text'>{this.props.text}</div>
-        <div className='comment-date'>{this.props.date}</div>
-      </div>
-    )
-  }
-}
 
 export default class App extends React.Component {
   render () {
     return (
       <div style={{textAlign: 'center'}}>
-        {/* <Hello name='React' /> */}
-        <Welcome name='Jack' />
-        <Comment text='评论内容' date='2017.03.13' />
+        <Clock nickName='tom' id='001' />
+        <Clock nickName='jack' id='002' />
+        <Clock nickName='kate' id='003' />
       </div>
     )
   }

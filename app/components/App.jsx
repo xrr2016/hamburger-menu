@@ -1,5 +1,6 @@
 import React from 'react'
 import Clock from './clock.jsx'
+import Toggle from './toggle.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -44,8 +45,7 @@ export default class App extends React.Component {
     return (
       <div style={{textAlign: 'center'}}>
         <Clock nickName='tom' id='001' />
-        <Clock nickName='jack' id='002' />
-        <Clock nickName='kate' id='003' />
+        <Toggle />
       </div>
     )
   }

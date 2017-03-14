@@ -1,6 +1,7 @@
 import React from 'react'
 import Clock from './clock.jsx'
 import Toggle from './toggle.jsx'
+import Condition from './condition.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -39,6 +40,7 @@ import Toggle from './toggle.jsx'
 //     )
 //   }
 // }
+const messages = ['React', 'React-router', 'Redux', 'Mobx', 'Antd']
 
 export default class App extends React.Component {
   render () {
@@ -46,6 +48,7 @@ export default class App extends React.Component {
       <div style={{textAlign: 'center'}}>
         <Clock nickName='tom' id='001' />
         <Toggle />
+        <Condition show messages={messages} eatting />
       </div>
     )
   }

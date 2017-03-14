@@ -1,7 +1,8 @@
 import React from 'react'
 import Clock from './clock.jsx'
-import Toggle from './toggle.jsx'
-import Condition from './condition.jsx'
+// import Toggle from './toggle.jsx'
+// import Condition from './condition.jsx'
+import List from './list.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -40,15 +41,16 @@ import Condition from './condition.jsx'
 //     )
 //   }
 // }
-const messages = ['React', 'React-router', 'Redux', 'Mobx', 'Antd']
+// const messages = ['React', 'React-router', 'Redux', 'Mobx', 'Antd']
 
 export default class App extends React.Component {
   render () {
     return (
       <div style={{textAlign: 'center'}}>
         <Clock nickName='tom' id='001' />
-        <Toggle />
-        <Condition show messages={messages} eatting />
+        {/* <Toggle /> */}
+        {/* <Condition show messages={messages} eatting /> */}
+        <List />
       </div>
     )
   }

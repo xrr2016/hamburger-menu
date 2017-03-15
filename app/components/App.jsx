@@ -1,8 +1,9 @@
 import React from 'react'
-import Clock from './clock.jsx'
+// import Clock from './clock.jsx'
 // import Toggle from './toggle.jsx'
 // import Condition from './condition.jsx'
-import List from './list.jsx'
+// import List from './list.jsx'
+import Form from './nameForm.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -47,10 +48,11 @@ export default class App extends React.Component {
   render () {
     return (
       <div style={{textAlign: 'center'}}>
-        <Clock nickName='tom' id='001' />
+        {/* <Clock nickName='tom' id='001' /> */}
         {/* <Toggle /> */}
         {/* <Condition show messages={messages} eatting /> */}
-        <List />
+        {/* <List /> */}
+        <Form />
       </div>
     )
   }

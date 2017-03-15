@@ -4,7 +4,8 @@ import React from 'react'
 // import Condition from './condition.jsx'
 // import List from './list.jsx'
 // import Form from './nameForm.jsx'
-import Boiling from './boiling.jsx'
+// import Boiling from './boiling.jsx'
+import SignupDialog from './composition.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -54,7 +55,8 @@ export default class App extends React.Component {
         {/* <Condition show messages={messages} eatting /> */}
         {/* <List /> */}
         {/* <Form /> */}
-        <Boiling />
+        {/* <Boiling /> */}
+        <SignupDialog />
       </div>
     )
   }

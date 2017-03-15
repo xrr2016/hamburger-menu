@@ -3,7 +3,8 @@ import React from 'react'
 // import Toggle from './toggle.jsx'
 // import Condition from './condition.jsx'
 // import List from './list.jsx'
-import Form from './nameForm.jsx'
+// import Form from './nameForm.jsx'
+import Boiling from './boiling.jsx'
 
 // function formatName (user) {
 //   return user.firstName + ' ' + user.lastName
@@ -52,7 +53,8 @@ export default class App extends React.Component {
         {/* <Toggle /> */}
         {/* <Condition show messages={messages} eatting /> */}
         {/* <List /> */}
-        <Form />
+        {/* <Form /> */}
+        <Boiling />
       </div>
     )
   }
